@@ -474,7 +474,7 @@ int state_status(struct snapraid_state* state)
 	}
 
 	if (unscrubbed_blocks) {
-		printf("The %u%% of the array is not scrubbed.\n", (unscrubbed_blocks * 100 + blockmax - 1) / blockmax);
+		printf("There is %u%% of the array that is not scrubbed.\n", (unscrubbed_blocks * 100 + blockmax - 1) / blockmax);
 	} else {
 		printf("The full array was scrubbed at least one time.\n");
 	}
